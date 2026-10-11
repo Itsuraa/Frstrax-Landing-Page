@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Four Star Shurk logo</title>
+  <desc id="desc">Logo utama FrStrax' berupa bidang hitam dengan empat bintang putih yang menyatu.</desc>
+  <rect width="1080" height="1080" fill="#000"/>
+  <g fill="#fff">
+    <path d="M540 154l41 126 132 1-107 77 40 126-106-78-107 78 40-126-107-77 132-1z"/>
+    <path d="M312 397l32 98 103 1-84 60 32 99-83-61-84 61 32-99-84-60 104-1z"/>
+    <path d="M768 397l32 98 104 1-84 60 32 99-84-61-83 61 32-99-84-60 103-1z"/>
+    <path d="M540 640l41 126 132 1-107 77 40 126-106-78-107 78 40-126-107-77 132-1z"/>
+  </g>
+  <g fill="#000" opacity=".96">
+    <path d="M522 211h36v213h-36z" transform="rotate(45 540 318)"/>
+    <path d="M301 441h27v170h-27z" transform="rotate(-28 314 526)"/>
+    <path d="M753 441h27v170h-27z" transform="rotate(28 766 526)"/>
+    <path d="M522 704h36v213h-36z" transform="rotate(-45 540 811)"/>
+  </g>
+</svg>

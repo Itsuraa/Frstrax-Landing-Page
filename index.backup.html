@@ -1,0 +1,156 @@
+﻿<!doctype html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FrStrax' Web Community, komunitas editor Indonesia untuk JJ, motion graphic, typography, AMV/PMV, dan JUGG.">
+  <meta name="theme-color" content="#0f172a">
+  <title>FrStrax' Official — Web Community</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { ink: '#10131a', night: '#171923', bone: '#f7f1e8', ember: '#e6572f', brass: '#c99638', moss: '#65734f' }, fontFamily: { display: ['Bricolage Grotesque', 'ui-sans-serif', 'system-ui', 'sans-serif'], body: ['Manrope', 'ui-sans-serif', 'system-ui', 'sans-serif'] }, boxShadow: { cut: '8px 8px 0 rgba(16, 19, 26, 0.9)' } } } }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="bg-bone font-body text-ink antialiased">
+  <div id="scrollProgress" class="fixed left-0 top-0 z-[70] h-1 w-0 bg-ember"></div>
+  <header class="sticky top-0 z-50 border-b-2 border-ink bg-bone/95 backdrop-blur-sm">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="Navigasi utama">
+      <a href="#home" class="flex min-h-11 items-center gap-3" aria-label="FrStrax' Official beranda">
+        <span class="grid size-10 place-items-center border-2 border-ink bg-ember font-display text-lg font-extrabold text-white shadow-[4px_4px_0_#10131a]">F</span>
+        <span class="leading-tight"><span class="block font-display text-lg font-extrabold">FrStrax'</span><span class="block text-xs font-bold uppercase tracking-[0.18em] text-moss">Official</span></span>
+      </a>
+      <div class="hidden items-center gap-1 lg:flex">
+        <a class="nav-link" href="#overview">Overview</a><a class="nav-link" href="#gallery">Gallery</a><a class="nav-link" href="#portal">Portal</a><a class="nav-link" href="#join">Gabung</a>
+      </div>
+      <a href="#join" class="hidden min-h-11 items-center border-2 border-ink bg-night px-5 py-2 text-sm font-extrabold text-bone shadow-[4px_4px_0_#e6572f] transition hover:-translate-y-0.5 lg:inline-flex">Masuk Komunitas</a>
+      <button id="menuButton" class="inline-flex min-h-11 items-center gap-2 border-2 border-ink bg-white px-3 py-2 font-bold lg:hidden" type="button" aria-controls="mobileMenu" aria-expanded="false"><span>Menu</span><span class="menu-icon" aria-hidden="true"></span></button>
+    </nav>
+    <div id="mobileMenu" class="hidden border-t-2 border-ink bg-bone lg:hidden">
+      <div class="mx-auto grid max-w-7xl gap-2 px-4 py-4 sm:px-6">
+        <a class="mobile-link" href="#overview">Overview komunitas</a><a class="mobile-link" href="#gallery">Gallery karya</a><a class="mobile-link" href="#portal">Halaman portal</a><a class="mobile-link" href="#join">Cara bergabung</a>
+      </div>
+    </div>
+  </header>
+  <main id="home">
+    <section class="relative overflow-hidden border-b-2 border-ink bg-[linear-gradient(135deg,#f7f1e8_0%,#f7f1e8_56%,#eadac1_56%,#eadac1_100%)]">
+      <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-end lg:px-8 lg:py-24">
+        <div class="max-w-3xl">
+          <p class="mb-5 inline-flex border-2 border-ink bg-white px-3 py-2 text-xs font-extrabold uppercase tracking-[0.2em] shadow-[4px_4px_0_#10131a]">Editor Indonesia • sejak 2025</p>
+          <h1 class="font-display text-5xl font-extrabold leading-[0.92] tracking-[-0.05em] sm:text-6xl lg:text-8xl">Tempat editor FrStrax' tumbuh bareng.</h1>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-ink/78 sm:text-xl">Komunitas untuk editor Indonesia yang ingin mengasah JJ, motion graphic, typography, AMV/PMV, dan JUGG. Di sini anggota belajar, kolaborasi, dan merilis karya bersama.</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row"><a href="#join" class="inline-flex min-h-12 items-center justify-center border-2 border-ink bg-ember px-6 py-3 font-extrabold text-white shadow-cut transition hover:-translate-y-1">Lihat cara bergabung</a><a href="#gallery" class="inline-flex min-h-12 items-center justify-center border-2 border-ink bg-white px-6 py-3 font-extrabold shadow-[6px_6px_0_#10131a] transition hover:-translate-y-1">Tonton karya komunitas</a></div>
+        </div>
+        <div class="hero-board reveal rounded-[1.75rem] border-2 border-ink bg-night p-4 text-bone shadow-cut sm:p-6">
+          <div class="grid gap-4 sm:grid-cols-2"><article class="col-span-full border-2 border-bone/80 bg-bone p-5 text-ink"><p class="text-sm font-bold uppercase tracking-[0.18em] text-ember">FrStrax' Web Community</p><p class="mt-3 font-display text-3xl font-extrabold leading-tight">Belajar bareng, bikin kolep, dan jaga solidaritas komunitas kecil.</p></article><div class="border-2 border-bone/70 bg-ember p-4"><p class="text-4xl font-extrabold">2025</p><p class="mt-2 text-sm font-bold">Tahun berdiri komunitas</p></div><div class="border-2 border-bone/70 bg-brass p-4 text-ink"><p class="text-4xl font-extrabold">@DelxQ_Anthrlf</p><p class="mt-2 text-sm font-bold">Founder komunitas</p></div></div>
+        </div>
+      </div>
+    </section>
+    <section id="overview" class="border-b-2 border-ink py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
+          <div class="lg:sticky lg:top-24">
+            <p class="font-bold uppercase tracking-[0.22em] text-ember">Overview</p>
+            <h2 class="mt-3 font-display text-4xl font-extrabold tracking-[-0.04em] sm:text-5xl">Dari komunitas kecil ke ruang latihan editor.</h2>
+          </div>
+          <div class="grid gap-5">
+            <article class="reveal border-2 border-ink bg-white p-6 shadow-[6px_6px_0_#10131a]">
+              <h3 class="font-display text-2xl font-extrabold">Bukan cuma JJ</h3>
+              <p class="mt-3 leading-8 text-ink/75">FrStrax' membuka ruang untuk banyak gaya edit: JJ, motion graphic, typography, AMV/PMV, sampai JUGG. Anggota bisa mencoba format baru tanpa harus keluar dari komunitas.</p>
+            </article>
+            <article class="reveal ml-0 border-2 border-ink bg-[#eadac1] p-6 shadow-[6px_6px_0_#10131a] sm:ml-8">
+              <h3 class="font-display text-2xl font-extrabold">Belajar sambil jalan</h3>
+              <p class="mt-3 leading-8 text-ink/75">Komunitas ini berjalan sejak 2025 dan terus berkembang dari proses belajar bersama, membuat MEP, kolep style, dan battle JJ.</p>
+            </article>
+            <article class="reveal border-2 border-ink bg-night p-6 text-bone shadow-[6px_6px_0_#e6572f] sm:mr-8">
+              <h3 class="font-display text-2xl font-extrabold">Solidaritas dijaga</h3>
+              <p class="mt-3 leading-8 text-bone/75">Nilai utama FrStrax' adalah kompak. Karya mungkin belum selalu sempurna, tapi proses bareng membuat komunitas tetap hidup.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="border-b-2 border-ink bg-night py-16 text-bone sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <p class="font-bold uppercase tracking-[0.22em] text-brass">Gallery</p>
+          <h2 class="mt-3 font-display text-4xl font-extrabold tracking-[-0.04em] sm:text-5xl">Karya yang pernah muncul di portal.</h2>
+          <p class="mt-4 leading-8 text-bone/72">Link mengarah ke akun TikTok Official FrStrax' seperti yang tercantum di Google Sites lama.</p>
+        </div>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-3">
+          <article class="video-card reveal">
+            <div class="video-mark">01</div>
+            <h3>FrStrax' MEP 17an</h3>
+            <p>MEP JJ bersama FIVESTAR dan OFC Sixstar untuk merayakan Dirgahayu Republik Indonesia.</p>
+            <a href="https://www.tiktok.com/@frstrax.official" target="_blank" rel="noopener">Buka TikTok Official</a>
+          </article>
+          <article class="video-card reveal md:translate-y-8">
+            <div class="video-mark">02</div>
+            <h3>Kolep Style JJ F3S</h3>
+            <p>Kolaborasi FrStrax', FiveStar, dan Sixstar, hosted by @4x'DLXQ.</p>
+            <a href="https://www.tiktok.com/@frstrax.official" target="_blank" rel="noopener">Lihat kolep</a>
+          </article>
+          <article class="video-card reveal">
+            <div class="video-mark">03</div>
+            <h3>Battle JJ Phase 3</h3>
+            <p>Battle JJ komunitas dengan tagar #frstraxbukanmaen dan #frstraxjaya.</p>
+            <a href="https://www.tiktok.com/@frstrax.official" target="_blank" rel="noopener">Tonton battle</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portal" class="border-b-2 border-ink py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-8 lg:grid-cols-[1fr_1.15fr] lg:items-center">
+          <div>
+            <p class="font-bold uppercase tracking-[0.22em] text-ember">Portal</p>
+            <h2 class="mt-3 font-display text-4xl font-extrabold tracking-[-0.04em] sm:text-5xl">Jangan mentok di halaman muka.</h2>
+            <p class="mt-5 leading-8 text-ink/75">Versi lama memiliki beberapa halaman portal. Di versi ini, halaman-halaman itu disiapkan sebagai daftar akses cepat agar pengunjung tahu konten apa saja yang tersedia.</p>
+          </div>
+          <div class="portal-list reveal">
+            <a href="#overview"><span>01</span> Sejarah Komunitas</a>
+            <a href="#home"><span>02</span> Logo Komunitas</a>
+            <a href="#gallery"><span>03</span> Intro yang Pernah Dibuat</a>
+            <a href="#gallery"><span>04</span> Daftar Partner Komunitas</a>
+            <a href="#join"><span>05</span> Informasi dan Update ke Depan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="bg-ember py-16 text-white sm:py-20">
+      <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:px-8">
+        <div>
+          <p class="font-bold uppercase tracking-[0.22em] text-white/75">Bergabung</p>
+          <h2 class="mt-3 font-display text-4xl font-extrabold tracking-[-0.04em] sm:text-6xl">Mau ikut berkembang bareng FrStrax'?</h2>
+          <p class="mt-5 max-w-2xl text-lg leading-8 text-white/82">Kalau ingin masuk komunitas, pantau halaman portal dan akun official untuk update open member, MEP, battle, dan kolaborasi berikutnya.</p>
+        </div>
+        <div class="border-2 border-white bg-night p-6 shadow-[8px_8px_0_#10131a]">
+          <p class="font-display text-2xl font-extrabold">@2026 FrStrax' Community</p>
+          <p class="mt-3 leading-7 text-bone/75">Berdiri sejak tahun 2025. Founder oleh: @delxq_anthrlf.</p>
+          <div class="mt-6 grid gap-3">
+            <a class="join-link" href="https://www.tiktok.com/@frstrax.official" target="_blank" rel="noopener">TikTok Official FrStrax'</a>
+            <a class="join-link" href="https://sites.google.com/view/frstrax-web-portal/halaman-muka" target="_blank" rel="noopener">Google Sites lama</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t-2 border-ink bg-bone px-4 py-8 sm:px-6 lg:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col gap-3 text-sm font-semibold text-ink/70 sm:flex-row sm:items-center sm:justify-between">
+      <p>© 2026 FrStrax' Community.</p>
+      <p>Dibuat ulang sebagai website statis ringan: HTML, Tailwind CSS, CSS, dan JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
+
