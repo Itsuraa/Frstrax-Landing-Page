@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   color-scheme: light;
 }
 
@@ -32,6 +32,50 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+.brand-wordmark {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 0.55rem;
+  color: #10131a;
+}
+
+.brand-wordmark-icon {
+  display: grid;
+  width: 2.65rem;
+  height: 2.65rem;
+  place-items: center;
+  border: 2px solid #10131a;
+  background: #fff;
+  box-shadow: 3px 3px 0 #10131a;
+  padding: 0.45rem;
+}
+
+.brand-wordmark-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brand-wordmark-text {
+  display: grid;
+  gap: 0.05rem;
+  line-height: 1;
+}
+
+.brand-wordmark-text span:first-child {
+  font-family: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.brand-wordmark-text span:last-child {
+  color: #65734f;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.22em;
 }
 
 .logo-showcase-img {
