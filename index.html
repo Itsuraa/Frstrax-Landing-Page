@@ -3,39 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="FrStrax' Web Community, komunitas editor Indonesia untuk JJ, motion graphic, typography, AMV/PMV, dan JUGG.">
-  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="FrStrax' Community — Wadah Kreativitas Editor Indonesia.">
+  <meta name="theme-color" content="#10131a">
   <title>FrStrax' Official — Web Community</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = { theme: { extend: { colors: { ink: '#10131a', night: '#171923', bone: '#f7f1e8', ember: '#e6572f', brass: '#c99638', moss: '#65734f' }, fontFamily: { display: ['Bricolage Grotesque', 'ui-sans-serif', 'system-ui', 'sans-serif'], body: ['Manrope', 'ui-sans-serif', 'system-ui', 'sans-serif'] }, boxShadow: { cut: '8px 8px 0 rgba(16, 19, 26, 0.9)' } } } }
+    tailwind.config = { 
+      theme: { 
+        extend: { 
+          colors: { ink: '#10131a', bone: '#f7f1e8', ember: '#e6572f', brass: '#c99638', moss: '#65734f', night: '#171923' },
+          fontFamily: { display: ['Bricolage Grotesque', 'sans-serif'], body: ['Manrope', 'sans-serif'] }
+        } 
+      } 
+    }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body class="bg-bone font-body text-ink antialiased">
-  <div id="scrollProgress" class="fixed left-0 top-0 z-[70] h-1 w-0 bg-ember"></div>
+  <div id="scrollProgress" class="fixed left-0 top-0 z-[70] h-1.5 w-0 bg-ember"></div>
+  
   <header class="sticky top-0 z-50 border-b-2 border-ink bg-bone/95 backdrop-blur-sm">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="Navigasi utama">
-      <a href="#home" class="flex min-h-11 items-center gap-3" aria-label="FrStrax' Official beranda">
-        <span class="brand-wordmark" aria-hidden="true"><span class="brand-wordmark-icon"><img src="./assets/NoS.png" alt=""></span><span class="brand-wordmark-text"><span>FrStrax'</span><span>OFFICIAL</span></span></span>
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
+      <a href="./index.html" class="flex items-center gap-3">
+        <span class="brand-wordmark">
+          <span class="brand-wordmark-icon"><img src="./assets/NoS.png" alt="Logo"></span>
+          <span class="brand-wordmark-text text-left"><span>FrStrax'</span><span>OFFICIAL</span></span>
+        </span>
       </a>
       <div class="hidden items-center gap-1 lg:flex">
-        <a class="nav-link is-active" href="./index.html">Halaman Muka</a><a class="nav-link" href="./sejarah.html">Sejarah Komunitas</a><a class="nav-link" href="./logo.html">Logo Komunitas</a><a class="nav-link" href="./intro.html">Intro</a><a class="nav-link" href="./partner.html">Partner</a><a class="nav-link" href="./update.html">Update</a>
+        <a class="nav-link is-active" href="./index.html">Beranda</a>
+        <a class="nav-link" href="./sejarah.html">Sejarah</a>
+        <a class="nav-link" href="./logo.html">Logo</a>
+        <a class="nav-link" href="./intro.html">Intro</a>
+        <a class="nav-link" href="./partner.html">Partner</a>
+        <a class="nav-link" href="./update.html">Update</a>
       </div>
-      <a href="./update.html" class="hidden min-h-11 items-center border-2 border-ink bg-night px-5 py-2 text-sm font-extrabold text-bone shadow-[4px_4px_0_#e6572f] transition hover:-translate-y-0.5 lg:inline-flex">Info Opmem</a>
-      <button id="menuButton" class="inline-flex min-h-11 items-center gap-2 border-2 border-ink bg-white px-3 py-2 font-bold lg:hidden" type="button" aria-controls="mobileMenu" aria-expanded="false"><span>Menu</span><span class="menu-icon" aria-hidden="true"></span></button>
+      <button id="menuButton" class="inline-flex min-h-[44px] items-center gap-2 border-2 border-ink bg-white px-4 py-2 font-bold lg:hidden shadow-[3px_3px_0_#10131a]">
+        <span>Menu</span><span class="menu-icon"></span>
+      </button>
     </nav>
     <div id="mobileMenu" class="hidden border-t-2 border-ink bg-bone lg:hidden">
-      <div class="mx-auto grid max-w-7xl gap-2 px-4 py-4 sm:px-6">
-        <a class="mobile-link" href="./index.html">Halaman Muka</a>
+      <div class="grid gap-2 p-4">
+        <a class="mobile-link bg-ember/10 font-black" href="./index.html">Halaman Muka</a>
         <a class="mobile-link" href="./sejarah.html">Sejarah Komunitas</a>
         <a class="mobile-link" href="./logo.html">Logo Komunitas</a>
-        <a class="mobile-link" href="./intro.html">Intro yang pernah Dibuat</a>
-        <a class="mobile-link" href="./partner.html">Daftar Partner Komunitas</a>
-        <a class="mobile-link" href="./update.html">Informasi dan Update Kedepan</a>
+        <a class="mobile-link" href="./intro.html">Intro Karya</a>
+        <a class="mobile-link" href="./partner.html">Daftar Partner</a>
+        <a class="mobile-link" href="./update.html">Update & Info</a>
       </div>
     </div>
   </header>
@@ -49,7 +64,7 @@
           <div class="mt-8 flex flex-col gap-3 sm:flex-row"><a href="#join" class="inline-flex min-h-12 items-center justify-center border-2 border-ink bg-ember px-6 py-3 font-extrabold text-white shadow-cut transition hover:-translate-y-1">Lihat cara bergabung</a><a href="#gallery" class="inline-flex min-h-12 items-center justify-center border-2 border-ink bg-white px-6 py-3 font-extrabold shadow-[6px_6px_0_#10131a] transition hover:-translate-y-1">Tonton karya komunitas</a></div>
         </div>
         <div class="hero-board reveal rounded-[1.75rem] border-2 border-ink bg-night p-4 text-bone shadow-cut sm:p-6">
-          <div class="grid gap-4 sm:grid-cols-2"><article class="col-span-full border-2 border-bone/80 bg-bone p-5 text-ink"><p class="text-sm font-bold uppercase tracking-[0.18em] text-ember">FrStrax' Web Community</p><p class="mt-3 font-display text-3xl font-extrabold leading-tight">Belajar bareng, bikin kolep, dan jaga solidaritas komunitas kecil.</p></article><div class="border-2 border-bone/70 bg-ember p-4"><p class="text-4xl font-extrabold">2025</p><p class="mt-2 text-sm font-bold">Tahun berdiri komunitas</p></div><div class="min-w-0 border-2 border-bone/70 bg-brass p-4 text-ink"><p class="hero-founder-name">@DelxQ_Anthrlf</p><p class="mt-2 text-sm font-bold">Founder komunitas</p></div></div>
+          <div class="grid gap-4 sm:grid-cols-2"><article class="col-span-full border-2 border-bone/80 bg-bone p-5 text-ink"><p class="text-sm font-bold uppercase tracking-[0.18em] text-ember">FrStrax' Web Community</p><p class="mt-3 font-display text-3xl font-extrabold leading-tight">Belajar bareng, bikin collab, dan jaga solidaritas komunitas kecil.</p></article><div class="border-2 border-bone/70 bg-ember p-4"><p class="text-4xl font-extrabold">2025</p><p class="mt-2 text-sm font-bold">Tahun berdiri komunitas</p></div><div class="min-w-0 border-2 border-bone/70 bg-brass p-4 text-ink"><p class="hero-founder-name">@DelxQ_Anthrlf</p><p class="mt-2 text-sm font-bold">Founder komunitas</p></div></div>
         </div>
       </div>
     </section>
@@ -67,7 +82,7 @@
             </article>
             <article class="reveal ml-0 border-2 border-ink bg-[#eadac1] p-6 shadow-[6px_6px_0_#10131a] sm:ml-8">
               <h3 class="font-display text-2xl font-extrabold">Belajar sambil jalan</h3>
-              <p class="mt-3 leading-8 text-ink/75">Komunitas ini berjalan sejak 2025 dan terus berkembang dari proses belajar bersama, membuat MEP, kolep style, dan battle JJ.</p>
+              <p class="mt-3 leading-8 text-ink/75">Komunitas ini berjalan sejak 2025 dan terus berkembang dari proses belajar bersama, membuat MEP, collab style, dan battle JJ.</p>
             </article>
             <article class="reveal border-2 border-ink bg-night p-6 text-bone shadow-[6px_6px_0_#e6572f] sm:mr-8">
               <h3 class="font-display text-2xl font-extrabold">Menjaga solidaritas</h3>
@@ -82,7 +97,7 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
           <p class="font-bold uppercase tracking-[0.22em] text-brass">Gallery</p>
-          <h2 class="mt-3 font-display text-4xl font-extrabold tracking-[-0.04em] sm:text-5xl">Karya yang pernah muncul di portal.</h2>
+          <h2 class="mt-3 font-display text-4xl font-extrabold tracking-[-0.04em] sm:text-5xl">Karya yang pernah muncul di TikTok.</h2>
           <p class="mt-4 leading-8 text-bone/72">Link mengarah ke akun TikTok Official FrStrax'</p>
         </div>
 
@@ -113,9 +128,9 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid gap-8 lg:grid-cols-[1fr_1.15fr] lg:items-center">
           <div>
-            <p class="font-bold uppercase tracking-[0.22em] text-ember">Portal</p>
-            <h2 class="mt-3 font-display text-4xl font-extrabold tracking-[-0.04em] sm:text-5xl">Eksplor kmunitas ini</h2>
-            <p class="mt-5 leading-8 text-ink/75">Versi lama memiliki beberapa halaman portal. Di versi ini, halaman-halaman itu disiapkan sebagai daftar akses cepat agar pengunjung tahu konten apa saja yang tersedia.</p>
+            <p class="font-bold uppercase tracking-[0.22em] text-ember">Homeppage</p>
+            <h2 class="mt-3 font-display text-4xl font-extrabold tracking-[-0.04em] sm:text-5xl">Eksplor komunitas ini</h2>
+            <p class="mt-5 leading-8 text-ink/75">Eksplor webpage baru dari komunitas kami dengan cepat melalui button ini.</p>
           </div>
           <div class="portal-list reveal">
             <a href="./sejarah.html"><span>01</span> Sejarah Komunitas (Timeline Marga & Identitas)</a>
@@ -150,7 +165,7 @@
   <footer class="border-t-2 border-ink bg-bone px-4 py-8 sm:px-6 lg:px-8">
     <div class="mx-auto flex max-w-7xl flex-col gap-3 text-sm font-semibold text-ink/70 sm:flex-row sm:items-center sm:justify-between">
       <p>© 2026 FrStrax' Community.</p>
-      <p>by Kyzee-Itsuraa 2026</p>
+      <p>Made with <3 by Kyzee</p>
     </div>
   </footer>
 

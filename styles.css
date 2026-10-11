@@ -345,3 +345,19 @@ body[data-theme='update'] {
   --accent-soft: #ffe4dc;
 }
 
+/* Mobile polish */
+@media (max-width: 640px) {
+  .brand-wordmark-text span:first-child {
+    font-size: 0.95rem;
+  }
+  .brand-wordmark-text span:last-child {
+    font-size: 0.65rem;
+  }
+  .mobile-link {
+    font-size: 0.95rem;
+  }
+  .video-card h3 {
+    font-size: 1.6rem;
+  }
+}
+
